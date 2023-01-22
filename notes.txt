@@ -1,0 +1,5 @@
+--> mkdir routes controllers views models config
+
+--> production level port number is "80"
+
+--> 
