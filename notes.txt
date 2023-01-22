@@ -1,5 +1,32 @@
+--> commands : npm init --yes
+               npm i express
+               npm i ejs
+               npm i express-ejs-layouts
+               npm i mongoose
+               npm i cookie-parser
+
 --> mkdir routes controllers views models config
 
 --> production level port number is "80"
 
---> 
+--> root index.js will send request to -> routes/index.js
+
+--> "const express = require('express');" -> express is invoked multiple times but irrespective of the number of call
+    only one instance of express will be used here
+
+--> controller : is a set of different actions
+
+--> http://localhost:8000/users/profile
+
+--> _header and _footer are partials
+
+--> layout is different from partials
+
+--> ./ -> says search in the neighbouring file
+
+--> console.error.bind() -> displays console.log as an error
+
+--> using "-" is known as kebab case
+
+--> cookies : with every request browser sends a file to the server and with its response server sends its
+              the file back to the browser, storing users identity
