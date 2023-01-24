@@ -4,6 +4,10 @@
                npm i express-ejs-layouts
                npm i mongoose
                npm i cookie-parser
+               npm i passport
+               npm i passport-local
+               npm i express-session
+               npm i connect-mongo@3 -> this is okay but latest version throws error
 
 --> mkdir routes controllers views models config
 
@@ -30,3 +34,19 @@
 
 --> cookies : with every request browser sends a file to the server and with its response server sends its
               the file back to the browser, storing users identity
+
+--> Passport.js -> is a middleware
+                   uses session cookie
+
+--> session cookie - stores all info plus it is also encrypted
+
+--> serializeUser : taking the document id and putting it in the cookie
+
+--> deserializeUser : in the server we r using id to find the user
+
+--> ctrl + space -> to trigger auto complete
+
+--> saveUninitialized : when ever there is a request which is not initialised or when a session is not initialised
+    or the user is not loggedin in that case do i want to store extra data in session cookies ?? hence false
+
+--> 
