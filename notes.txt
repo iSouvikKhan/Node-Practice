@@ -9,6 +9,9 @@
                npm i express-session
                npm i connect-mongo@3 -> this is okay but latest version throws error
 
+               npm i node-sass-middleware
+               npm i connect-flash
+
 --> mkdir routes controllers views models config
 
 --> production level port number is "80"
@@ -49,4 +52,13 @@
 --> saveUninitialized : when ever there is a request which is not initialised or when a session is not initialised
     or the user is not loggedin in that case do i want to store extra data in session cookies ?? hence false
 
---> 
+--> SCSS -> the most commonly used one
+--> SASS -> the indented version
+
+--> browser understands only css
+--> browser converts SCSS or SASS file to CSS
+
+--> async - await : it tells your server that this function contains some async statements and u need to wait with each async statement
+                    which has been marked as async and once it gets executed then move on to the next
+
+--> Flash messages : are stored in session cookies and are stored in next request

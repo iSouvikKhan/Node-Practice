@@ -12,6 +12,20 @@ const passport = require("passport");
 const passportLocal = require("./config/passport-local-strategy");
 const MongoStore = require('connect-mongo')(session);
 
+// const sassMiddleware = require("node-sass-middleware");
+
+const flash = require("connect-flash");
+
+const customMware = require('./config/middleware');
+
+// app.use(sassMiddleware({
+//     src: "./assets/scss",
+//     dest: "./assets/css",
+//     debug: true,
+//     outputStyle: "extended",
+//     prefix: "/css"
+// })); // I am putting this just before the server is started, server need those precompiled files before it starts
+
 app.use(express.urlencoded());
 app.use(cookieParser());
 
@@ -63,6 +77,10 @@ app.use(passport.session());
 
 
 app.use(passport.setAuthenticatedUser);
+
+app.use(flash());
+
+app.use(customMware.setFlash);
 
 
 // use express router
