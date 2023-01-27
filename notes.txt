@@ -8,9 +8,28 @@
                npm i passport-local
                npm i express-session
                npm i connect-mongo@3 -> this is okay but latest version throws error
-
                npm i node-sass-middleware
                npm i connect-flash
+               npm i multer
+               npm i passport-jwt
+               npm i jsonwebtoken
+
+               npm i passport-google-oauth --> not implemented
+               npm i crypto
+
+               npm i nodemailer
+
+               npm i kue
+               npm i redis
+
+               npm i socket.io
+               
+               npm i morgan
+               npm i rotating-file-stream
+               npm i gulp
+               npm i gulp-cssnano
+               npm i gulp-rev
+
 
 --> mkdir routes controllers views models config
 
@@ -62,3 +81,19 @@
                     which has been marked as async and once it gets executed then move on to the next
 
 --> Flash messages : are stored in session cookies and are stored in next request
+
+--> JWT -> Header : Payload : Signature
+
+--> Every worker in Kue has a process function
+
+--> Process Function : tells the worker whenever a new task is added into your queue, u need to run the code inside this process function
+
+--> Every task put into the queue is a job
+
+--> To view all queues -> ./node_modules/kue/bin/kue-dsahboard ( leave the terminal in this location of your project and earch localhost:3000 )
+
+--> http://localhost:8006/api/v1/questions/create
+    localhost:8000/api/v1/posts
+    localhost:8000/api/v1/users/create-session
+
+--> 

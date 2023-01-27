@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 // connect to the db
 mongoose.connect("mongodb://127.0.0.1/codeial_development"); // 127.0.0.1 instead of localhost for present version of Node
 
+// const mongoose = require('mongoose');
+// const env = require('./environment');
+// mongoose.connect(`mongodb://localhost/${env.db}`);
+
 // acquire the connection ( to check whether it is successful or not )
 const db = mongoose.connection; // connection between mongoose and database
 
